@@ -219,7 +219,6 @@ const FormInput: FC<FormInputProps> = ({
           <>
             <Autocomplete
               fullWidth={fullWidth}
-              placeholder={placeholder}
               onSelect={e => handleChange((e.target as HTMLInputElement).value)}
               disablePortal
               size="small"
