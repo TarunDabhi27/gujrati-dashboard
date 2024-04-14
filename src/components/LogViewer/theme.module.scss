@@ -1,0 +1,79 @@
+.logContainer {
+  width: 100%;
+
+  .logViewer {
+    height: 500px;
+    overflow-y: scroll;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 8px;
+    overflow-anchor: none;
+  }
+
+  .listItem {
+    padding: 4px 0;
+
+    .logContent {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr;
+
+      .timestamp {
+        color: #555;
+        min-width: max-content;
+        text-align: right;
+        margin-right: 8px;
+      }
+
+      .message {
+        margin: 0;
+        white-space: 'pre-wrap';
+        overflow-wrap: 'break-word';
+
+        span.highlight {
+          background-color: rgba(255, 81, 0, 0.345);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .searchBar {
+    display: flex;
+    margin-bottom: 1rem;
+
+    .input {
+      max-width: 30rem;
+    }
+
+    .searchResult {
+      align-self: center;
+      margin-left: 0.5rem;
+
+      .resultCount {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+        color: #555;
+      }
+    }
+  }
+
+  .resultNavigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 4px;
+    }
+  }
+
+  .activeResult {
+    background-color: #2f7ea267;
+  }
+}

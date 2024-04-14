@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 0;
+  gap: 0.3rem;
+  min-width: 15rem;
+  background-color: #fff;
+
+  a {
+    text-decoration: none;
+  }
+
+  .tab {
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #212121;
+    font-size: 0.9rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    img {
+      margin-right: 0.5rem;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &.active {
+      background-color: #ffe0b2;
+      color: #212121;
+    }
+  }
+}

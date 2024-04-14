@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Toystack-Bold';
+  src: local('Toystack-Bold'), url('./media/fonts/Toystack-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Toystack-Italic';
+  src: local('Toystack-Italic'), url('./media/fonts/Toystack-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Toystack-Medium';
+  src: local('Toystack-Medium'), url('./media/fonts/Toystack-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Toystack-Regular';
+  src: local('Toystack-Regular'), url('./media/fonts/Toystack-Regular.ttf') format('truetype');
+}
+
+html {
+  font-size: 16px;
+
+  body {
+    margin: 0;
+    font-family: 'Toystack-Regular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.33;
+  }
+
+  p,
+  span {
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: none;
+
+    &:hover {
+      text-transform: none;
+      text-decoration: none;
+    }
+  }
+
+  .noscrollbar {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0 !important;
+      display: none;
+    }
+
+    &::-webkit-scrollbar-button {
+      width: 0 !important;
+      height: 0 !important;
+    }
+
+    ::-webkit-scrollbar-track {
+      width: 0 !important;
+      height: 0 !important;
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+      width: 0 !important;
+      height: 0 !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: transparent;
+      border: none;
+    }
+
+    ::-webkit-scrollbar-corner {
+      width: 0 !important;
+      height: 0 !important;
+    }
+
+    ::-webkit-resizer {
+      width: 0 !important;
+      height: 0 !important;
+    }
+  }
+}

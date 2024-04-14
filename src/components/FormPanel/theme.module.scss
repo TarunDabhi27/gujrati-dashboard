@@ -1,0 +1,109 @@
+.formPanel {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+
+  .titleContainer {
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+    color: #696969;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    margin: 0.5rem 0;
+
+    .submitButton {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .label {
+    font-family: 'Gujrati-Medium', sans-serif;
+    font-size: 0.8rem;
+    color: #696969;
+    margin-bottom: 0.25rem;
+  }
+
+  .helperText {
+    font-size: 0.8rem;
+    color: #6d6e6f;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .helperTextError {
+    font-size: 0.75rem;
+    color: #d32f2f;
+    margin-left: 1rem;
+  }
+
+  .value {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
+    fieldset {
+      border-color: rgba(0, 0, 0, 0.23) !important;
+    }
+  }
+
+  &.withReadMode {
+    background-color: #fff;
+    border: 1px solid #edeae9;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+
+    .inner {
+      .dataContainer {
+        padding: 0 1rem;
+        border-bottom: 1px solid #eee;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      .editButton {
+        visibility: hidden;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: #ffcc80;
+      }
+
+      &:hover {
+        border-color: #bdbdbd;
+
+        .editButton {
+          visibility: inherit;
+        }
+      }
+
+      .value {
+        input {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &.withEditMode {
+    border: 1px solid #edeae9;
+
+    .dataContainer {
+      padding: 0 1rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .buttonContainer {
+      margin: 0.5rem 1rem;
+    }
+  }
+}

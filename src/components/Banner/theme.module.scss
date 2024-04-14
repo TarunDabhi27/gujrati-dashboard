@@ -1,0 +1,21 @@
+.container {
+  background-color: #eee;
+  padding: 1.5rem;
+  color: #212121;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+}
